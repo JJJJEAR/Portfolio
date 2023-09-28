@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
-import { HiMenu } from 'react-icons/hi'; // Import the menu icon from React Icons
+import { HiMenu } from 'react-icons/hi'; 
 
 const Navbar = () => {
-  // Define a state variable to track the menu's open/closed state
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navbarStyle = {
@@ -15,30 +14,30 @@ const Navbar = () => {
     padding: '20px',
     display: 'flex',
     justifyContent: 'space-between',
-    alignItems: 'center', // Center vertically
+    alignItems: 'center', 
   };
 
   const leftContentStyle = {
     display: 'flex',
-    alignItems: 'center', // Center vertically
+    alignItems: 'center', 
   };
 
   const rightContentStyle = {
     display: 'flex',
-    alignItems: 'center', // Center vertically
+    alignItems: 'center', 
   };
 
   const iconStyle = {
-    fontSize: '24px', // Adjust the size of the icon
-    marginRight: '10px', // Add spacing between the icon and text
-    cursor: 'pointer', // Add a pointer cursor to indicate interactivity
+    fontSize: '24px', 
+    marginRight: '10px', 
+    cursor: 'pointer', 
   };
 
   const buttonStyle = {
     backgroundColor: 'transparent',
     border: 'none',
     cursor: 'pointer',
-    marginLeft: '10px', // Adjust the spacing from the icon
+    marginLeft: '10px', 
     color: '#fff',
   };
 
@@ -48,15 +47,13 @@ const Navbar = () => {
     margin: '0 20px',
   };
 
-  // Function to toggle the menu open/closed state
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  // Function to handle the button click
   const handleButtonClick = () => {
-    // Add your desired functionality here
-    alert('Button clicked!'); // For example, show an alert
+
+    alert('Button clicked!'); 
   };
 
   return (

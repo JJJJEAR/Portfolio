@@ -4,7 +4,7 @@ import Navbar from './navbar';
 
 const HomePage = () => {
   const pageStyle = {
-    background: `url(${backgroundImage})`, // Replace with your image URL
+    background: `url(${backgroundImage})`, 
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
     backgroundAttachment: 'fixed',
@@ -23,7 +23,7 @@ const HomePage = () => {
     color: '#00aaff',
     textDecoration: 'underline',
     cursor: 'pointer',
-    transition: 'color 0.3s', // Add a smooth color transition on hover
+    transition: 'color 0.3s', 
   };
 
   return (
