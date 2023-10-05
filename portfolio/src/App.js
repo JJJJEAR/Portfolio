@@ -1,14 +1,14 @@
 import React from 'react';
-import Header from './Header';
-import Navbar from './navbar';
+
 import HomePage from './Homepage';
+import AboutPage from './About';
 
 
 function App() {
   return (
     <>
-      <Navbar/>
-      <HomePage/>
+      {/* <HomePage/> */}
+      <AboutPage/>
     </>
   );
 }

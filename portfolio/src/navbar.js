@@ -5,69 +5,64 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navbarStyle = {
-    backgroundColor: 'transparent',
-    color: '#fff',
-    position: 'absolute',
-    top: '0',
-    left: '0',
-    right: '0',
-    padding: '20px',
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center', 
+    //backgroundColor: '#000046',
+    backgroundColor: 'rgba(0, 0, 0, 0.4)',
+    padding: '25px',
+    color: 'white',
+    position: 'fixed',
+    top: '7%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    borderRadius: '50px',
+    boxShadow: '0 0 10px rgba(0, 0, 0, 0.7)',
+    zIndex: 1000,
+    marginHorizontal: '50px',
+    width: '60%',
+    // backgroundColor: 'transparent',
+    // color: '#fff',
+    // position: 'absolute',
+    // top: '0',
+    // left: '0',
+    // right: '0',
+    // padding: '20px',
+    // display: 'flex',
+    // justifyContent: 'space-between',
+    // alignItems: 'center', 
   };
 
-  const leftContentStyle = {
-    display: 'flex',
-    alignItems: 'center', 
-  };
+  // const leftContentStyle = {
+  //   display: 'flex',
+  //   alignItems: 'center', 
+  // };
 
-  const rightContentStyle = {
-    display: 'flex',
-    alignItems: 'center', 
-  };
+  // const rightContentStyle = {
+  //   display: 'flex',
+  //   alignItems: 'center', 
+  // };
 
   const iconStyle = {
-    fontSize: '24px', 
-    marginRight: '10px', 
+    fontSize: '20px', 
+    marginLeft: '20px',
+    marginRight: '20px', 
     cursor: 'pointer', 
-  };
-
-  const buttonStyle = {
-    backgroundColor: 'transparent',
-    border: 'none',
-    cursor: 'pointer',
-    marginLeft: '10px', 
-    color: '#fff',
   };
 
   const linkStyle = {
     color: '#fff',
     textDecoration: 'none',
-    margin: '0 20px',
+    margin: '50px',
   };
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const handleButtonClick = () => {
-
-    alert('Button clicked!'); 
-  };
-
   return (
     <nav style={navbarStyle}>
-      <div style={leftContentStyle}>
+      <div>
         <HiMenu icon="icon-name" style={iconStyle} onClick={toggleMenu} />
-        <span>Menu</span>
-      </div>
-      <div style={rightContentStyle}>
-        {isMenuOpen && (
-          <button style={buttonStyle} onClick={handleButtonClick}>
-            
-          </button>
-        )}
+        <span style={{cursor: 'pointer'}}></span>
+      
         <a href="/" style={linkStyle}>
           Home
         </a>
