@@ -7,8 +7,8 @@ import AboutPage from './About';
 function App() {
   return (
     <>
-      {/* <HomePage/> */}
-      <AboutPage/>
+      <HomePage/>
+      {/* <AboutPage/> */}
     </>
   );
 }
