@@ -3,11 +3,10 @@ import { Container, Row, Col } from "react-bootstrap";
 import Github from "../../img/github.png";
 import LinkedIn from "../../img/linkedin.png";
 import Instagram from "../../img/instagram.png";
-import { Link } from "react-scroll";
+import hello from "../../img/home.gif";
 import backgroundImage from '../../img/bg.jpg';
 
 import '../../css/Homepage.css';
-import '../../SignikaFont.css';
 
 export default function HomePage() {
   return (
@@ -28,26 +27,28 @@ export default function HomePage() {
                 <strong className="main-name text-primary"> Jullajak Saksri</strong>
               </h1>
               <div className="social-icons m-5 ">
-                <Link to="/github" target="_blank" className="social-icons me-3">
+                <a href="https://github.com/JJJJEAR" target="_blank" className="social-icons me-3" rel="noreferrer" >
                   <img src={Github} alt="GitHub Logo" style={{ width: '75px', height: '75px' }} />
-                </Link>
-                <Link to="/linkedin" target="_blank" className="social-icons me-3">
+                </a>
+                <a href="https://www.linkedin.com/in/jullajak-saksri/" target="_blank" className="social-icons me-3" rel="noreferrer" >
                   <img src={LinkedIn} alt="LinkedIn Logo" style={{ width: '50px', height: '50px' }} />
-                </Link>
-                <Link to="/instagram" target="_blank" >
+                </a>
+                <a href="https://www.instagram.com/jj.jear/" target="_blank" rel="noreferrer" >
                   <img src={Instagram} alt="Instagram Logo" style={{ width: '60px', height: '60px' }} />
-                </Link>
+                </a>
               </div>
             </Col>
+            <Col md={7} className="home-header pt-5">
+              <img src={hello}  style={{ width: 'auto', height: '85%' }}/>
+            </Col>
             <div className="text-center mt-5">
-                <Link to="/about" smooth={true} duration={500}>
-                  <button className="btn btn-lg btn-primary btn-rounded rounded-5 ">About Me</button>
-                </Link>
-              </div>
+              <a href="/about">
+                <button className="btn btn-lg btn-primary btn-rounded rounded-5 ">About Me</button>
+              </a>
+            </div>
           </Row>
-        </Container>  
+        </Container>
       </Container>
-
     </div>
   );
 }
