@@ -17,7 +17,7 @@ import {
   SiPhp
 } from "react-icons/si";
 
-export default function Techstack() {
+export default function Skills() {
   return (
     <div style={{ color: 'white' }} className="py-2 ">
       <h1 className="pb-3" style={{ textAlign: 'center' }}>
