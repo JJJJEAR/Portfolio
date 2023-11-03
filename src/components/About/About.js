@@ -1,9 +1,9 @@
 import React from 'react';
 import { Container, Row, Col } from "react-bootstrap";
 import Github from "./Github";
-import Techstack from "./Techstack";
-import Toolstack from "./Toolstack";
-import laptopImg from "../../img/about.png";
+import Skills from "./Skill";
+import Tools from "./Tools";
+import KAP from "../../img/XOsX.gif";
 import backgroundImage from '../../img/blur.jpg';
 
 export default function AboutPage() {
@@ -39,14 +39,14 @@ export default function AboutPage() {
             style={{ paddingTop: "120px", paddingBottom: "50px" }}
             className="about-img"
           >
-            <img src={laptopImg} alt="about" className="img-fluid"
-            style={{ width: "70%", height: "auto" }} />
+            <img src={KAP} alt="about" className="img-fluid"
+            style={{ width: "60%", height: "auto" }} />
           </Col>
 
         </Row>
 
-        <Techstack/><br/>
-        <Toolstack/><br/>
+        <Skills/><br/>
+        <Tools/><br/>
         <Github/>
       </Container>
     </Container>
