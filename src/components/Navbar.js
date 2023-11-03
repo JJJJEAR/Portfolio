@@ -42,7 +42,8 @@ export default function Navbar() {
                                 </NavLink>
                             </Nav.Item>
                             <Nav.Item className="p-2">
-                                <a variant="primary" href={pdf} target="_blank" style={{textDecoration: 'none', color: 'white'}}>
+                                <a variant="primary" href={pdf} target="_blank" rel="noopener noreferrer" 
+                                style={{textDecoration: 'none', color: 'white'}}>
                                     <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
                                 </a>
                             </Nav.Item>

@@ -1,65 +1,56 @@
 import React from 'react';
-import '../../css/AboutPage.css';
+import { Container, Row, Col } from "react-bootstrap";
+import Github from "./Github";
+import Techstack from "./Techstack";
+import Toolstack from "./Toolstack";
+import laptopImg from "./about.png";
+import backgroundImage from '../../img/blur.jpg';
 
 export default function AboutPage() {
   return (
-    <div>
-      <div className="aboutPage">
-        <div className="section">
-          <h1>About Me</h1>
-          <p>
-            Hello! My name is Jullajak Saksri. <br/>
-            I’m a 4 year student in the Bachelor of Engineering Program in Electronics Engineering Technology. <br/>
-            I’m interested in interning for the position of a software engineer , programmer and developer.
-          </p>
-        </div>
-        <div className="section">
-          <h2>Education Timeline</h2>
-          <div className="timeline">
-            <div className="event">
-              <div className="line"></div>
-              <div className="date">----</div>
-              <div className="description">
-                <h3>TPN</h3>
-                <p>SCHOOL</p>
-              </div>
+    <Container fluid className="about-section" style={{ background: `url(${backgroundImage})` }}>
+      <Container>
+        <Row style={{ justifyContent: "center", padding: "10px" }}>
+          <Col
+            md={7}
+            style={{
+              justifyContent: "center",
+              paddingTop: "12%",
+              paddingBottom: "50px",
+            }}
+          >
+            <h1 style={{ color:'white',fontSize: "40px", paddingBottom: "20px" }}>
+              Know Who <strong style={{ color: 'blue' }}>I'M</strong>
+            </h1>
+            <div className="mb-0">
+              <p style={{color:'white', textAlign: "justify" , fontSize:'25px' }}>
+                Hi Everyone, I am <span className="purple">Jullajak Saksri </span>
+                from <span className="purple"> KMUTNB</span>
+                <br /> I’m a 4 year student in the Bachelor of Engineering <br/>Program in Electronics Engineering Technology.
+                <br/>
+                I’m interested in interning for the position of <br/>a software engineer and developer.
+                <br/>
+                <br/>
+              </p>
             </div>
-            <div className="event">
-              <div className="line"></div>
-              <div className="date">---</div>
-              <div className="description">
-                <h3>KMUTNB</h3>
-                <p>University</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="section">
-          <h2>My Skills</h2>
-          <div className="skills">
-            <SkillBar skill="HTML" points={9} />
-            <SkillBar skill="CSS" points={8} />
-            <SkillBar skill="JavaScript" points={7} />
-            <SkillBar skill="React" points={8} />
-            <SkillBar skill="Java" points={7} />
-            <SkillBar skill="Python" points={6} />
-            <SkillBar skill="Database" points={6} />
-            <SkillBar skill="UI/UX Design" points={7} />
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
+          </Col>
+          <Col
+            md={5}
+            style={{ paddingTop: "120px", paddingBottom: "50px" }}
+            className="about-img"
+          >
+            <img src={laptopImg} alt="about" className="img-fluid"
+            style={{ width: "70%", height: "auto" }} />
+          </Col>
 
-const SkillBar = ({ skill, points }) => (
-  <div className="skillBar">
-    <div className="skillName">{skill}</div>
-    <div className="pointContainer">
-      {[...Array(10)].map((_, index) => (
-        <div key={index} className={index < points ? 'point filled' : 'point'}></div>
-      ))}
-    </div>
-  </div>
-);
+        </Row>
+        
+        <Techstack/><br/>
+        <Toolstack/><br/>
+        <Github/>
+      </Container>
+    </Container>
+
+  );
+}
 
