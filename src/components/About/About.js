@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import Github from "./Github";
 import Techstack from "./Techstack";
 import Toolstack from "./Toolstack";
-import laptopImg from "./about.png";
+import laptopImg from "../../img/about.png";
 import backgroundImage from '../../img/blur.jpg';
 
 export default function AboutPage() {
@@ -44,7 +44,7 @@ export default function AboutPage() {
           </Col>
 
         </Row>
-        
+
         <Techstack/><br/>
         <Toolstack/><br/>
         <Github/>
