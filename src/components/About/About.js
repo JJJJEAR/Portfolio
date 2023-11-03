@@ -1,11 +1,9 @@
 import React from 'react';
-import Navbar from './navbar';
-import './AboutPage.css';
+import '../../css/AboutPage.css';
 
-const AboutPage = () => {
+export default function AboutPage() {
   return (
     <div>
-      <Navbar />
       <div className="aboutPage">
         <div className="section">
           <h1>About Me</h1>
@@ -65,4 +63,3 @@ const SkillBar = ({ skill, points }) => (
   </div>
 );
 
-export default AboutPage;
