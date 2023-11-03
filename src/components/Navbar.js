@@ -1,63 +1,76 @@
 import React from 'react';
 import { Navbar as BootstrapNavbar, Nav, Container } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { BrowserRouter, NavLink, Navigate, Route, Routes } from 'react-router-dom'
 import { AiOutlineUser } from "react-icons/ai";
 import { CgFileDocument } from "react-icons/cg";
 import { FaGithub } from 'react-icons/fa';
+import HomePage from './Home/Homepage';
+import Resume from './resume/Resume';
 
-const Navbar = () => {
+export default function Navbar() {
     return (
-        <BootstrapNavbar
-            variant="dark"
-            expand="md"
-            fixed="top"
-            style={{width: '76%', borderRadius: '50px',
-                     margin: 'auto', marginTop: '15px',
-                     boxShadow: '0 0 15px rgba(63, 43, 150, 0.7)' }}
-        >
-            <Container >
-                <BootstrapNavbar.Brand as={Link} to="/" style={{ cursor: 'pointer' }}>
-                    Jullajak Saksri
-                </BootstrapNavbar.Brand>
+        <BrowserRouter>
+            <BootstrapNavbar
+                variant="dark"
+                expand="md"
+                fixed="top"
+                style={{
+                    width: '76%', borderRadius: '50px',
+                    margin: 'auto', marginTop: '15px',
+                    boxShadow: '0 0 15px rgba(63, 43, 150, 0.7)'
+                }}
+            >
+                <Container >
+                    <BootstrapNavbar.Brand as={NavLink} to="/" style={{ cursor: 'pointer' }}>
+                        Jullajak Saksri
+                    </BootstrapNavbar.Brand>
 
-                <BootstrapNavbar.Toggle aria-controls="responsive-navbar-nav">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </BootstrapNavbar.Toggle>
+                    <BootstrapNavbar.Collapse id="responsive-navbar-nav">
+                        <Nav className="ms-auto">
+                            <Nav.Item className="p-2">
+                                <NavLink to='/' style={{textDecoration:'none',color:'white'}} 
+                                className={({ isActive }) => isActive ? "active_menu" : "menu" } >
+                                    Home
+                                </NavLink>
+                            </Nav.Item>
+                            <Nav.Item className="p-2">
+                                <NavLink to='/about' style={{textDecoration:'none',color:'white'}}  
+                                className={({ isActive }) => isActive ? "active_menu" : "menu"} >
+                                    <AiOutlineUser style={{ marginBottom: "2px" }} /> About
+                                </NavLink>
+                            </Nav.Item>
+                            <Nav.Item className="p-2">
+                                <NavLink to='/resume' style={{textDecoration:'none',color:'white'}}
+                                className={({ isActive }) => isActive ? "active_menu" : "menu"}>
+                                    <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
+                                </NavLink>
+                            </Nav.Item>
+                            <Nav.Item >
+                                <a href="https://github.com/JJJJEAR" className="nav-link" 
+                                style={{textDecoration:'none',color:'white'}}>
+                                    <FaGithub style={{ marginBottom: "2px", marginRight: "5px" }} />Github
+                                </a>
+                            </Nav.Item>
+                            <Nav.Item className="p-2">
+                                <NavLink to='/contact' style={{textDecoration:'none',color:'white'}}  
+                                className={({ isActive }) => isActive ? "active_menu" : "menu"} >
+                                    Contact
+                                </NavLink>
+                            </Nav.Item>
+                        </Nav>
+                    </BootstrapNavbar.Collapse>
+                </Container>
 
-                <BootstrapNavbar.Collapse id="responsive-navbar-nav">
-                    <Nav className="ms-auto">
-                        <Nav.Item>
-                            <Link to="/" className="nav-link">
-                                Home
-                            </Link>
-                        </Nav.Item>
-                        <Nav.Item>
-                            <Link to="/about" className="nav-link">
-                                <AiOutlineUser style={{ marginBottom: "2px" }} /> About
-                            </Link>
-                        </Nav.Item>
-                        <Nav.Item>
-                            <Link to="/resume" className="nav-link">
-                                <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
-                            </Link>
-                        </Nav.Item>
-                        <Nav.Item>
-                            <a href="https://github.com/JJJJEAR" className="nav-link">
-                            <FaGithub style={{ marginBottom: "2px", marginRight: "5px" }} />Github
-                            </a>
-                        </Nav.Item>
-                        <Nav.Item>
-                            <Link to="/contact" className="nav-link">
-                                Contact
-                            </Link>
-                        </Nav.Item>
-                    </Nav>
-                </BootstrapNavbar.Collapse>
-            </Container>
-        </BootstrapNavbar>
+            </BootstrapNavbar>
+
+            <Routes>
+                <Route path="/" element={<HomePage />} />
+                <Route path="/about" element={<HomePage />} />
+                <Route path="/resume" element={<Resume />} />
+                <Route path="/contact" element={<HomePage />} />
+                <Route path="/*" element={<Navigate to="/" />} />
+            </Routes>
+        </BrowserRouter>
+
     );
 };
-
-export default Navbar;
