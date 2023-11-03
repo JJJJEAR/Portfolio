@@ -39,7 +39,7 @@ export default function HomePage() {
               </div>
             </Col>
             <Col md={7} className="home-header pt-5">
-              <img src={hello}  style={{ width: 'auto', height: '85%' }}/>
+              <img src={hello} alt="Hello" style={{ width: 'auto', height: '85%' }}/>
             </Col>
             <div className="text-center mt-5">
               <a href="/about">
