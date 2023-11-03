@@ -5,6 +5,7 @@ import Skills from "./Skill";
 import Tools from "./Tools";
 import KAP from "../../img/XOsX.gif";
 import backgroundImage from '../../img/blur.jpg';
+import EducationTimeline from './Timeline'
 
 export default function AboutPage() {
   return (
@@ -44,7 +45,7 @@ export default function AboutPage() {
           </Col>
 
         </Row>
-
+        <EducationTimeline/><br/>
         <Skills/><br/>
         <Tools/><br/>
         <Github/>
