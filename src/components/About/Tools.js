@@ -8,7 +8,7 @@ import {
 } from "react-icons/si";
 import { FcLinux } from "react-icons/fc";
 
-export default function Toolstack() {
+export default function Tools() {
   return (
     <div style={{ color: 'white' }} className="py-2">
       <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
