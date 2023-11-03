@@ -6,6 +6,7 @@ import { CgFileDocument } from "react-icons/cg";
 import { FaGithub } from 'react-icons/fa';
 import HomePage from './Home/Homepage';
 import Resume from './resume/Resume';
+import ContactPage from './Contact/ContactPage';
 
 export default function Navbar() {
     return (
@@ -67,7 +68,7 @@ export default function Navbar() {
                 <Route path="/" element={<HomePage />} />
                 <Route path="/about" element={<HomePage />} />
                 <Route path="/resume" element={<Resume />} />
-                <Route path="/contact" element={<HomePage />} />
+                <Route path="/contact" element={<ContactPage />} />
                 <Route path="/*" element={<Navigate to="/" />} />
             </Routes>
         </BrowserRouter>
