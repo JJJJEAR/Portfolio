@@ -25,37 +25,37 @@ export default function Skills() {
       </h1>
       <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
         <Col xs={4} md={2} className="tech-icons" style={{ fontSize: "3rem" }}>
-          <CgCPlusPlus />
+          <CgCPlusPlus/>
         </Col>
         <Col xs={4} md={2} className="tech-icons" style={{ fontSize: "3rem" }}>
-          <DiJavascript1 />
+          <DiJavascript1/>
         </Col>
         <Col xs={4} md={2} className="tech-icons" style={{ fontSize: "3rem" }}>
-          <DiNodejs />
+          <DiNodejs/>
         </Col>
         <Col xs={4} md={2} className="tech-icons" style={{ fontSize: "3rem" }}>
-          <DiReact />
+          <DiReact/>
         </Col>
         <Col xs={4} md={2} className="tech-icons" style={{ fontSize: "3rem" }}>
-          <DiMongodb />
+          <DiMongodb/>
         </Col>
         <Col xs={4} md={2} className="tech-icons" style={{ fontSize: "3rem" }}>
-          <DiGit />
+          <DiGit/>
         </Col>
         <Col xs={4} md={2} className="tech-icons" style={{ fontSize: "3rem" }}>
-          <SiFirebase />
+          <SiFirebase/>
         </Col>
         <Col xs={4} md={2} className="tech-icons" style={{ fontSize: "3rem" }}>
-          <DiPython />
+          <DiPython/>
         </Col>
         <Col xs={4} md={2} className="tech-icons" style={{ fontSize: "3rem" }}>
-          <DiJava />
+          <DiJava/>
         </Col>
         <Col xs={4} md={2} className="tech-icons" style={{ fontSize: "3rem" }}>
-          <SiHtml5 />
+          <SiHtml5/>
         </Col>
         <Col xs={4} md={2} className="tech-icons" style={{ fontSize: "3rem" }}>
-          <SiCss3 />
+          <SiCss3/>
         </Col>
         <Col xs={4} md={2} className="tech-icons" style={{ fontSize: "3rem" }}>
           <SiPhp />
