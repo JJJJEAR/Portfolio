@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ffbba2c6.css",
+    "main.js": "/static/js/main.1b2eaacf.js",
+    "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
+    "static/media/home.gif": "/static/media/home.8f40b925661dc4700b02.gif",
+    "static/media/Resume_Jullajak.pdf": "/static/media/Resume_Jullajak.a691130996c81cb83249.pdf",
+    "static/media/XOsX.gif": "/static/media/XOsX.3fb26d9b3c3c823ae786.gif",
+    "static/media/linkedin.png": "/static/media/linkedin.6ac77341c7a1f1743ba6.png",
+    "static/media/github.png": "/static/media/github.f260637be33e75188227.png",
+    "static/media/bg.jpg": "/static/media/bg.211eccb85c90d944d922.jpg",
+    "static/media/blur.jpg": "/static/media/blur.88ab544dfc6f0daf4828.jpg",
+    "static/media/instagram.png": "/static/media/instagram.210c3671a777d07fb910.png",
+    "index.html": "/index.html",
+    "main.ffbba2c6.css.map": "/static/css/main.ffbba2c6.css.map",
+    "main.1b2eaacf.js.map": "/static/js/main.1b2eaacf.js.map",
+    "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ffbba2c6.css",
+    "static/js/main.1b2eaacf.js"
+  ]
+}
