@@ -3,7 +3,6 @@ import { Container, Row, Col } from "react-bootstrap";
 import Github from "../../img/github.png";
 import LinkedIn from "../../img/linkedin.png";
 import Instagram from "../../img/instagram.png";
-import hello from "../../img/home.gif";
 import JJJ from "../../img/home.jpg";
 import backgroundImage from '../../img/bg.jpg';
 
