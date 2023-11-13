@@ -4,6 +4,7 @@ import Github from "../../img/github.png";
 import LinkedIn from "../../img/linkedin.png";
 import Instagram from "../../img/instagram.png";
 import hello from "../../img/home.gif";
+import JJJ from "../../img/home.jpg";
 import backgroundImage from '../../img/bg.jpg';
 
 import '../../css/Homepage.css';
@@ -39,7 +40,8 @@ export default function HomePage() {
               </div>
             </Col>
             <Col md={7} className="home-header pt-5">
-              <img src={hello} alt="Hello" style={{ width: 'auto', height: '85%' }}/>
+              <img src={JJJ} alt="Hello" style={{ width: 'auto', height: '85%' }}/>
+              
             </Col>
             <div className="text-center mt-5">
               <a href="/about">
